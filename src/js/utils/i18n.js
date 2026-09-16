@@ -40,7 +40,11 @@ const messages = {
   storyDetail: () => msg('Detail cerita', { id: 'storyDetail' }),
   close: () => msg('Tutup', { id: 'close' }),
   notes: () => msg('Catatan submission', { id: 'notes' }),
-  notesText: () => msg('Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.', { id: 'notesText' }),
+  notesText: () =>
+    msg(
+      'Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.',
+      { id: 'notesText' },
+    ),
   loginTitle: () => msg('Masuk ke Story App', { id: 'loginTitle' }),
   registerTitle: () => msg('Buat akun baru', { id: 'registerTitle' }),
   login: () => msg('Masuk', { id: 'login' }),
@@ -56,9 +60,45 @@ const messages = {
 };
 
 const authTranslations = {
-  id: { login: 'Masuk', register: 'Daftar', logout: 'Keluar', add: 'Tulis cerita', profile: 'Profil pengembang', loginTitle: 'Masuk ke Story App', registerTitle: 'Buat akun baru', noAccount: 'Belum punya akun?', hasAccount: 'Sudah punya akun?', createAccount: 'Daftar', loginSuccess: 'Pendaftaran berhasil. Silakan masuk.' },
-  en: { login: 'Sign in', register: 'Register', logout: 'Log out', add: 'Write a story', profile: 'Developer profile', loginTitle: 'Sign in to Story App', registerTitle: 'Create a new account', noAccount: "Don't have an account?", hasAccount: 'Already have an account?', createAccount: 'Register', loginSuccess: 'Registration successful. Please sign in.' },
-  es: { login: 'Iniciar sesión', register: 'Registrarse', logout: 'Cerrar sesión', add: 'Escribe una historia', profile: 'Perfil del desarrollador', loginTitle: 'Inicia sesión en Story App', registerTitle: 'Crea una cuenta nueva', noAccount: '¿No tienes una cuenta?', hasAccount: '¿Ya tienes una cuenta?', createAccount: 'Registrarse', loginSuccess: 'Registro exitoso. Inicia sesión.' },
+  id: {
+    login: 'Masuk',
+    register: 'Daftar',
+    logout: 'Keluar',
+    add: 'Tulis cerita',
+    profile: 'Profil pengembang',
+    loginTitle: 'Masuk ke Story App',
+    registerTitle: 'Buat akun baru',
+    noAccount: 'Belum punya akun?',
+    hasAccount: 'Sudah punya akun?',
+    createAccount: 'Daftar',
+    loginSuccess: 'Pendaftaran berhasil. Silakan masuk.',
+  },
+  en: {
+    login: 'Sign in',
+    register: 'Register',
+    logout: 'Log out',
+    add: 'Write a story',
+    profile: 'Developer profile',
+    loginTitle: 'Sign in to Story App',
+    registerTitle: 'Create a new account',
+    noAccount: "Don't have an account?",
+    hasAccount: 'Already have an account?',
+    createAccount: 'Register',
+    loginSuccess: 'Registration successful. Please sign in.',
+  },
+  es: {
+    login: 'Iniciar sesión',
+    register: 'Registrarse',
+    logout: 'Cerrar sesión',
+    add: 'Escribe una historia',
+    profile: 'Perfil del desarrollador',
+    loginTitle: 'Inicia sesión en Story App',
+    registerTitle: 'Crea una cuenta nueva',
+    noAccount: '¿No tienes una cuenta?',
+    hasAccount: '¿Ya tienes una cuenta?',
+    createAccount: 'Registrarse',
+    loginSuccess: 'Registro exitoso. Inicia sesión.',
+  },
 };
 
 export const t = (key) => authTranslations[locale()]?.[key] || messages[key]?.() || key;

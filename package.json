@@ -10,7 +10,9 @@
     "localize:build": "lit-localize build",
     "preview": "vite preview",
     "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "author": "rnlkav",
   "dependencies": {
@@ -27,6 +29,7 @@
     "eslint-plugin-lit": "^2.3.1",
     "eslint-plugin-wc": "^3.1.0",
     "globals": "^17.12.0",
+    "prettier": "^3.9.7",
     "sass": "^1.89.2",
     "vite": "^7.1.5"
   }

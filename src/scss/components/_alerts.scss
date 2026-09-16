@@ -1,2 +1,6 @@
-@use "../abstract/variables" as v;
-.alert { border: 0; border-left: 5px solid v.$accent; border-radius: .8rem; }
+@use '../abstract/variables' as v;
+.alert {
+  border: 0;
+  border-left: 5px solid v.$accent;
+  border-radius: 0.8rem;
+}

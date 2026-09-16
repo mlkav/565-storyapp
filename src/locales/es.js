@@ -20,5 +20,9 @@ export const messages = [
   { key: 'storyDetail', value: 'Detalle de la historia' },
   { key: 'close', value: 'Cerrar' },
   { key: 'notes', value: 'Notas de entrega' },
-  { key: 'notesText', value: 'Esta app usa Lit Web Components, Bootstrap, Sass modular, JSON local, validación de formularios y tres idiomas.' }
+  {
+    key: 'notesText',
+    value:
+      'Esta app usa Lit Web Components, Bootstrap, Sass modular, JSON local, validación de formularios y tres idiomas.',
+  },
 ];

@@ -4,6 +4,8 @@ Story App is a client-side web application for discovering and sharing stories
 with photos. It was created as a Dicoding submission and uses the Dicoding
 Story API as its backend.
 
+[Story App - Firebase Website](https://storyapp-565.web.app/)
+
 ## Features
 
 - User registration and login.
@@ -91,20 +93,23 @@ https://story-api.dicoding.dev/v1
 
 ## npm scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Starts the Vite development server. |
-| `npm run build` | Creates a production build in `dist/`. |
-| `npm run preview` | Serves the production build locally. |
-| `npm run lint` | Lints JavaScript files in `src/`. |
-| `npm run lint:fix` | Automatically fixes supported lint issues. |
-| `npm run localize:extract` | Extracts localization messages into XLIFF files. |
-| `npm run localize:build` | Generates compiled locale modules in `src/generated/`. |
+| Command                    | Description                                            |
+| -------------------------- | ------------------------------------------------------ |
+| `npm run dev`              | Starts the Vite development server.                    |
+| `npm run build`            | Creates a production build in `dist/`.                 |
+| `npm run preview`          | Serves the production build locally.                   |
+| `npm run lint`             | Lints JavaScript files in `src/`.                      |
+| `npm run lint:fix`         | Automatically fixes supported lint issues.             |
+| `npm run format`           | Formats supported project files with Prettier.         |
+| `npm run format:check`     | Checks formatting without changing files.              |
+| `npm run localize:extract` | Extracts localization messages into XLIFF files.       |
+| `npm run localize:build`   | Generates compiled locale modules in `src/generated/`. |
 
 Recommended validation before submitting changes:
 
 ```bash
 npm run lint
+npm run format:check
 npm run build
 ```
 
@@ -130,13 +135,13 @@ The project does not currently define an automated test script in
 The application uses hash-based routing and therefore does not require
 server-side rewrites:
 
-| Hash | Page | Access |
-| --- | --- | --- |
-| `#/login` | Login | Public |
-| `#/register` | Registration | Public |
-| `#/` | Dashboard and story list | Requires authentication |
-| `#/add` | Add story form | Requires authentication |
-| `#/profile` | Developer profile | Requires authentication |
+| Hash         | Page                     | Access                  |
+| ------------ | ------------------------ | ----------------------- |
+| `#/login`    | Login                    | Public                  |
+| `#/register` | Registration             | Public                  |
+| `#/`         | Dashboard and story list | Requires authentication |
+| `#/add`      | Add story form           | Requires authentication |
+| `#/profile`  | Developer profile        | Requires authentication |
 
 Unauthenticated users are redirected to `#/login`. Authenticated users cannot
 open the login or registration pages.
@@ -147,12 +152,12 @@ All requests use an Axios instance configured with the base URL
 `https://story-api.dicoding.dev/v1`. After login, the authentication token is
 sent in the `Authorization` header using the bearer scheme.
 
-| Method | Endpoint | Description |
-| --- | --- | --- |
-| `POST` | `/register` | Creates a new account. |
-| `POST` | `/login` | Starts a session and returns an authentication token. |
-| `GET` | `/stories?size=100` | Retrieves the story list. |
-| `POST` | `/stories` | Creates a story using `multipart/form-data`. |
+| Method | Endpoint            | Description                                           |
+| ------ | ------------------- | ----------------------------------------------------- |
+| `POST` | `/register`         | Creates a new account.                                |
+| `POST` | `/login`            | Starts a session and returns an authentication token. |
+| `GET`  | `/stories?size=100` | Retrieves the story list.                             |
+| `POST` | `/stories`          | Creates a story using `multipart/form-data`.          |
 
 For payload and response details, see the official
 [Dicoding Story API documentation](https://story-api.dicoding.dev/).

@@ -20,5 +20,9 @@ export const messages = [
   { key: 'storyDetail', value: 'Detail cerita' },
   { key: 'close', value: 'Tutup' },
   { key: 'notes', value: 'Catatan submission' },
-  { key: 'notesText', value: 'Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.' }
+  {
+    key: 'notesText',
+    value:
+      'Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.',
+  },
 ];

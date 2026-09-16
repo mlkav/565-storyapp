@@ -28,9 +28,13 @@ const route = async () => {
   currentPage.replaceWith(page);
   const path = window.location.hash.replace('#', '') || (isAuthenticated() ? '/' : '/login');
   try {
-    if ((path === '/login' || path === '/register') && isAuthenticated()) { window.location.hash = '#/'; return; }
-    else if ((path === '/' || path === '/add' || path === '/profile') && !isAuthenticated()) { window.location.hash = '#/login'; return; }
-    else if (path === '/login') renderLogin(page);
+    if ((path === '/login' || path === '/register') && isAuthenticated()) {
+      window.location.hash = '#/';
+      return;
+    } else if ((path === '/' || path === '/add' || path === '/profile') && !isAuthenticated()) {
+      window.location.hash = '#/login';
+      return;
+    } else if (path === '/login') renderLogin(page);
     else if (path === '/register') renderRegister(page);
     else if (path === '/add') renderAddStory(page);
     else if (path === '/profile') renderProfile(page);
@@ -43,8 +47,14 @@ const route = async () => {
   }
 };
 window.addEventListener('hashchange', route);
-window.addEventListener('auth-expired', () => { clearSession(); window.location.hash = '#/login'; });
-window.addEventListener('locale-changed', () => { shell(); route(); });
+window.addEventListener('auth-expired', () => {
+  clearSession();
+  window.location.hash = '#/login';
+});
+window.addEventListener('locale-changed', () => {
+  shell();
+  route();
+});
 await localeReady;
 shell();
 route();

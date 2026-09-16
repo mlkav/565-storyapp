@@ -20,5 +20,9 @@ export const messages = [
   { key: 'storyDetail', value: 'Story detail' },
   { key: 'close', value: 'Close' },
   { key: 'notes', value: 'Submission notes' },
-  { key: 'notesText', value: 'This app uses Lit Web Components, Bootstrap, modular Sass, local JSON, form validation, and three-language support.' }
+  {
+    key: 'notesText',
+    value:
+      'This app uses Lit Web Components, Bootstrap, modular Sass, local JSON, form validation, and three-language support.',
+  },
 ];
