@@ -1,0 +1,33 @@
+{
+  "name": "story-app",
+  "version": "1.0.0",
+  "description": "Dicoding Story App submission",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "localize:extract": "lit-localize extract",
+    "localize:build": "lit-localize build",
+    "preview": "vite preview",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "author": "rnlkav",
+  "dependencies": {
+    "@lit/localize": "^0.12.2",
+    "axios": "^1.20.0",
+    "bootstrap": "^5.3.8",
+    "firebase": "^12.19.0",
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@lit/localize-tools": "^0.8.2",
+    "eslint": "^10.10.0",
+    "eslint-plugin-lit": "^2.3.1",
+    "eslint-plugin-wc": "^3.1.0",
+    "globals": "^17.12.0",
+    "sass": "^1.89.2",
+    "vite": "^7.1.5"
+  }
+}

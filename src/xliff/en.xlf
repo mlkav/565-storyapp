@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"><file source-language="id" target-language="en"><body>
+<trans-unit id="dashboard"><source>Temukan cerita hari ini</source><target>Discover today’s stories</target></trans-unit>
+<trans-unit id="subtitle"><source>Ruang untuk berbagi momen, perjalanan, dan inspirasi.</source><target>A space to share moments, journeys, and inspiration.</target></trans-unit>
+<trans-unit id="explore"><source>Jelajahi cerita</source><target>Explore stories</target></trans-unit>
+<trans-unit id="add"><source>Tulis cerita</source><target>Write a story</target></trans-unit>
+<trans-unit id="profile"><source>Profil pengembang</source><target>Developer profile</target></trans-unit>
+<trans-unit id="search"><source>Cari cerita...</source><target>Search stories...</target></trans-unit>
+<trans-unit id="latest"><source>Cerita terbaru</source><target>Latest stories</target></trans-unit>
+<trans-unit id="description"><source>Deskripsi cerita</source><target>Story description</target></trans-unit>
+<trans-unit id="photo"><source>Foto cerita</source><target>Story photo</target></trans-unit>
+<trans-unit id="publish"><source>Terbitkan cerita</source><target>Publish story</target></trans-unit>
+<trans-unit id="choose"><source>Pilih foto untuk pratinjau</source><target>Choose a photo to preview</target></trans-unit>
+<trans-unit id="success"><source>Cerita berhasil disimpan!</source><target>Story saved successfully!</target></trans-unit>
+<trans-unit id="about"><source>Tentang Story App</source><target>About Story App</target></trans-unit>
+<trans-unit id="newMemory"><source>KENANGAN BARU</source><target>NEW MEMORY</target></trans-unit>
+<trans-unit id="addIntro"><source>Abadikan momen terbaikmu dalam satu cerita.</source><target>Capture your best moments in one story.</target></trans-unit>
+<trans-unit id="photoRequired"><source>Pilih foto cerita.</source><target>Choose a story photo.</target></trans-unit>
+<trans-unit id="minDescription"><source>Deskripsi minimal 10 karakter.</source><target>Description must be at least 10 characters.</target></trans-unit>
+<trans-unit id="detail"><source>Lihat detail</source><target>View details</target></trans-unit>
+<trans-unit id="storyDetail"><source>Detail cerita</source><target>Story detail</target></trans-unit>
+<trans-unit id="close"><source>Tutup</source><target>Close</target></trans-unit>
+<trans-unit id="notes"><source>Catatan submission</source><target>Submission notes</target></trans-unit>
+<trans-unit id="notesText"><source>Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.</source><target>This app uses Lit Web Components, Bootstrap, modular Sass, local JSON, form validation, and three-language support.</target></trans-unit>
+</body></file></xliff>

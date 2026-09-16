@@ -1,0 +1,10 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+
+.story-card, .profile-shell {
+  @include m.glass-card;
+  border-radius: v.$border-radius;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  &:hover { transform: translateY(-5px); box-shadow: 0 1.5rem 3rem rgba(23, 32, 51, .14); }
+}

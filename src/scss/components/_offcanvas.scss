@@ -1,0 +1,12 @@
+@use "../abstract/variables" as v;
+.offcanvas { background: linear-gradient(160deg, v.$brand-dark, v.$brand); color: white; }
+.offcanvas .nav-link {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .8rem 1rem;
+  color: rgba(255,255,255,.82);
+  border-radius: .75rem;
+  cursor: pointer;
+  &:hover, &:focus-visible { background: rgba(255,255,255,.15); color: white; }
+}

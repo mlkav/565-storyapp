@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"><file source-language="id" target-language="es"><body>
+<trans-unit id="dashboard"><source>Temukan cerita hari ini</source><target>Descubre historias de hoy</target></trans-unit>
+<trans-unit id="subtitle"><source>Ruang untuk berbagi momen, perjalanan, dan inspirasi.</source><target>Un espacio para compartir momentos, viajes e inspiración.</target></trans-unit>
+<trans-unit id="explore"><source>Jelajahi cerita</source><target>Explorar historias</target></trans-unit>
+<trans-unit id="add"><source>Tulis cerita</source><target>Escribe una historia</target></trans-unit>
+<trans-unit id="profile"><source>Profil pengembang</source><target>Perfil del desarrollador</target></trans-unit>
+<trans-unit id="search"><source>Cari cerita...</source><target>Buscar historias...</target></trans-unit>
+<trans-unit id="latest"><source>Cerita terbaru</source><target>Historias recientes</target></trans-unit>
+<trans-unit id="description"><source>Deskripsi cerita</source><target>Descripción</target></trans-unit>
+<trans-unit id="photo"><source>Foto cerita</source><target>Foto</target></trans-unit>
+<trans-unit id="publish"><source>Terbitkan cerita</source><target>Publicar historia</target></trans-unit>
+<trans-unit id="choose"><source>Pilih foto untuk pratinjau</source><target>Elige una foto para previsualizar</target></trans-unit>
+<trans-unit id="success"><source>Cerita berhasil disimpan!</source><target>¡Historia guardada!</target></trans-unit>
+<trans-unit id="about"><source>Tentang Story App</source><target>Sobre Story App</target></trans-unit>
+<trans-unit id="newMemory"><source>KENANGAN BARU</source><target>NUEVO RECUERDO</target></trans-unit>
+<trans-unit id="addIntro"><source>Abadikan momen terbaikmu dalam satu cerita.</source><target>Guarda tus mejores momentos en una historia.</target></trans-unit>
+<trans-unit id="photoRequired"><source>Pilih foto cerita.</source><target>Elige una foto para la historia.</target></trans-unit>
+<trans-unit id="minDescription"><source>Deskripsi minimal 10 karakter.</source><target>La descripción debe tener al menos 10 caracteres.</target></trans-unit>
+<trans-unit id="detail"><source>Lihat detail</source><target>Ver detalles</target></trans-unit>
+<trans-unit id="storyDetail"><source>Detail cerita</source><target>Detalle de la historia</target></trans-unit>
+<trans-unit id="close"><source>Tutup</source><target>Cerrar</target></trans-unit>
+<trans-unit id="notes"><source>Catatan submission</source><target>Notas de entrega</target></trans-unit>
+<trans-unit id="notesText"><source>Aplikasi ini menggunakan Lit Web Components, Bootstrap, Sass modular, local JSON, validasi form, dan dukungan tiga bahasa.</source><target>Esta app usa Lit Web Components, Bootstrap, Sass modular, JSON local, validación de formularios y tres idiomas.</target></trans-unit>
+</body></file></xliff>

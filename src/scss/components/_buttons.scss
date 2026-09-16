@@ -1,0 +1,80 @@
+@use "../abstract/variables" as v;
+@use "../abstract/mixins" as m;
+.btn-primary { --bs-btn-bg: #{v.$brand}; --bs-btn-border-color: #{v.$brand}; --bs-btn-hover-bg: #{v.$brand-dark}; --bs-btn-hover-border-color: #{v.$brand-dark}; border-radius: 999px; }
+.btn { @include m.focus-ring; }
+
+.action-button, .hero-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  font-weight: 700;
+  border-radius: 999px;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  &:hover { transform: translateY(-3px); box-shadow: 0 .8rem 1.4rem rgba(23, 32, 51, .18); filter: saturate(1.08); }
+  &:active { transform: translateY(-1px); }
+}
+
+.action-button {
+  min-height: 2.75rem;
+  padding: .55rem .7rem .55rem .9rem;
+  border: 1px solid transparent;
+  box-shadow: 0 .25rem .8rem rgba(23, 32, 51, .08);
+  &--write {
+    color: v.$brand-dark;
+    background: linear-gradient(135deg, #f1efff, #e4e0ff);
+    border-color: #d9d3ff;
+    .action-arrow { background: v.$brand; color: white; }
+  }
+  &--profile {
+    color: white;
+    background: linear-gradient(135deg, v.$brand, v.$brand-dark);
+    border-color: v.$brand;
+    .action-arrow { background: rgba(255, 255, 255, .18); color: white; }
+  }
+}
+
+.hero-action {
+  padding: .8rem 1.2rem;
+  color: v.$ink;
+  background: white;
+  &:hover { color: v.$brand-dark; background: white; }
+}
+
+.action-icon { font-size: 1.2em; line-height: 1; }
+.action-label { white-space: nowrap; }
+.action-arrow {
+  display: grid;
+  width: 1.45rem;
+  height: 1.45rem;
+  place-items: center;
+  border-radius: 50%;
+  font-size: .95rem;
+  line-height: 1;
+  transition: transform .2s ease;
+}
+.action-button:hover .action-arrow { transform: translate(1px, -1px); }
+.menu-trigger {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  box-shadow: 0 .35rem .8rem rgba(64, 51, 168, .24);
+  svg { width: 1.35rem; height: 1.35rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
+  &:hover { box-shadow: 0 .5rem 1rem rgba(64, 51, 168, .32); }
+}
+
+@media (max-width: 991.98px) {
+  .hero-action { width: min(100%, 18rem); }
+}
+
+@media (max-width: 575.98px) {
+  .hero-action { width: 100%; }
+  .action-label { overflow: hidden; text-overflow: ellipsis; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .action-button, .hero-action, .action-arrow { transition: none; }
+}

@@ -1,0 +1,8 @@
+@mixin glass-card {
+  border: 1px solid rgba(91, 75, 219, .12);
+  box-shadow: 0 1rem 2.5rem rgba(23, 32, 51, .08);
+}
+
+@mixin focus-ring {
+  &:focus-visible { outline: 3px solid rgba(247, 178, 103, .8); outline-offset: 3px; }
+}
